@@ -8,6 +8,7 @@
         v-bind:todo="todo"
         @remove-todo="removeTodo"
         @complete-todo="completeTodo"
+        @edit-todo="editSubmit"
       />
     </ul>
   </div>
@@ -26,6 +27,9 @@ export default {
     },
     completeTodo(id) {
       this.$emit("complete-todo", id);
+    },
+    editSubmit(id, title) {
+      this.$emit("edit-todo", id, title);
     },
   },
 };

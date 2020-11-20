@@ -14,6 +14,7 @@
       v-bind:todos="filteredTodos"
       @remove-todo="removeTodo"
       @complete-todo="completeTodo"
+      @edit-todo="editTodo"
     />
     <p v-else>No todos here. Do you want to add one?</p>
   </div>
@@ -37,7 +38,6 @@ export default {
   },
   mounted() {
     const storageState = JSON.parse(localStorage.getItem("todos"));
-    console.log(storageState);
     if (storageState) {
       this.todos = storageState;
     }
@@ -66,8 +66,14 @@ export default {
       this.save();
     },
     completeTodo(id) {
-      this.todos = this.todos.map((item) =>
-        item.id === id ? { ...item, completed: !item.completed } : item
+      this.todos = this.todos.map((todo) =>
+        todo.id === id ? { ...todo, completed: !todo.completed } : todo
+      );
+      this.save();
+    },
+    editTodo(id, title) {
+      this.todos = this.todos.map((todo) =>
+        todo.id === id ? { ...todo, title } : todo
       );
       this.save();
     },
