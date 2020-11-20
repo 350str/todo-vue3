@@ -1,19 +1,19 @@
-# todo-vue
+# [Todo list Vue 3](https://mesto-new.now.sh/) 
 
-## Project setup
-```
-yarn install
-```
+Разрабатывался с целью практики с Vue.
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+Основной стек технологий - Vue 3, Vue router, JavaScript, localStorage, PrimeVue.
 
-### Compiles and minifies for production
-```
-yarn build
-```
+Доступный функционал: 
+  * добавление/удаление Todo;
+  * возможность пометить Todo как завершенное;
+  * фильтр по завершенным/не завершенным делам; 
+  * сохранение списка дел в localStorage; 
+  * редактировать имя пользователя и изображение профиля; 
+  * присутствует валидация форм через JavaScript.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Setup
+
+`$ npm install` or `$ yarn`
+
+`$ npm run serve` or `$ yarn serve`
