@@ -1,4 +1,4 @@
-# [Todo list Vue 3](https://mesto-new.now.sh/) 
+# [Todo list Vue 3](https://todo-vue3.vercel.app/) 
 
 Разрабатывался с целью практики с Vue.
 
