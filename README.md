@@ -1,8 +1,8 @@
 # [Todo list Vue 3](https://mesto-new.now.sh/) 
 
-Разрабатывался с целью практики с Vue 3.0.
+Разрабатывался с целью практики с Vue.
 
-Основной стек технологий - Vue 3, JavaScript, localStorage, PrimeVue.
+Основной стек технологий - Vue 3, Vue router, JavaScript, localStorage, PrimeVue.
 
 Доступный функционал: 
   * добавление/удаление Todo;
